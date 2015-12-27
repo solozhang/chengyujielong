@@ -80,9 +80,9 @@ if __name__=='__main__':
     sql = """select chengyu from pre_org_chengyu"""
     data = Exesql(sql).data
 
-    data_set = set()
+    data_set = []
     for i in data:
-        data_set.add(i[0])
+        data_set.append(i[0])
 
     first = raw_input("请输入第一个成语: ")
     last = raw_input("请输入最后一个成语: ")
