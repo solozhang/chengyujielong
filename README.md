@@ -9,3 +9,16 @@
         人百其身
         身败名裂
     
+
+sql文件是成语数据库，倒入前的创建表结构命令：
+CREATE TABLE `pre_org_chengyu` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `chengyu` varchar(255) DEFAULT NULL,
+  `pinyin` varchar(255) DEFAULT NULL,
+  `diangu` text,
+  `chuchu` text,
+  `lizi` text,
+  `spinyin` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `chengyu` (`chengyu`)
+) ENGINE=InnoDB AUTO_INCREMENT=13001 DEFAULT CHARSET=utf8
