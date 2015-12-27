@@ -94,11 +94,6 @@ if __name__=='__main__':
     print u'开始查找第{}层...'.format(Search.level)
     position = Search.do_search(data_set)
     while position == -1:
-#        if len(Search.has_searched) == has_search_count:
-#            finished = 1
-#            break
-#        else:
-#            has_search_count = len(Search.has_searched)
             print u'开始查找第{}层...'.format(Search.level)
             position = Search.do_search(data_set)
 
