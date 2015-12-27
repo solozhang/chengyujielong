@@ -89,10 +89,10 @@ if __name__=='__main__':
     first = unicode(first, 'utf8')
     last = unicode(last, 'utf8')
     Search = LevelSearch(first, last)
-    print u'开始查找第{}层...'.format(Search.level)
+    print u'开始查找第{}层...'.format(Search.level + 1)
     position = Search.do_search(data_set)
     while position == -1:
-            print u'开始查找第{}层...'.format(Search.level)
+            print u'开始查找第{}层...'.format(Search.level + 1)
             position = Search.do_search(data_set)
 
     print u'=================='
